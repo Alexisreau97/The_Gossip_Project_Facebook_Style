@@ -1,5 +1,13 @@
 <div class="center jumbotron">
-  <h1>Bienvenue !</h1>
+  <% if @current_user %>
+  <h1>Bienvenue <%= @current_user.name %> !</h1>
+  <%= link_to 'Logout', "/users/login", method: :delete, class: "btn btn-lg btn-danger" %>
+  <br><br>
   <h3>Ici, tu peux retrouver les moussaillons 🎓</h3>
+  <%= link_to "Voir les potins !", "/gossips", class: "btn btn-lg btn-primary" %>
+  <% else %>
+  <h1>Vous n'êtes pas connecté</h1>
   <%= link_to "Enregistre-toi !", "users/login", class: "btn btn-lg btn-primary" %>
+  <br><br>
+  <% end %>
 </div>

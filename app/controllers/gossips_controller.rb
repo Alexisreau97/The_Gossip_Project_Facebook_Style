@@ -2,13 +2,17 @@ class GossipsController < ApplicationController
 	def index
 		@gossip = Gossip.all
 	end
+
 	def new
 		@gossip = Gossip.new
 	end
+
 	def create
-		if @curent_user
-			create_params = params.require(:gossip).permit(:title, :content, :anonymous_gossiper)
-			@gossip = Gossip.create!(create_params)
+		if @current_user
+			@gossip = Gossip.create!(title: params[:gossip][:title], content: params[:gossip][:content], user_id: @current_user.id)
+		else
+			flash[:info] = "Veuillez vous identifier"
+			redirect_to new_gossip_path
 		end
 	end
 
