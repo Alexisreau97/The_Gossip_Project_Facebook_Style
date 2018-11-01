@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :gossips
   resources :registrations
   resources :users
+  post '/registrations/new', to: 'registrations#create'
 end
