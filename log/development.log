@@ -6919,3 +6919,1183 @@ Processing by UsersController#login as HTML
 Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:19:08 +0100
+  [1m[35m (55.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 346ms (Views: 337.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:19:11 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (39.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 130ms (Views: 68.3ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:19:12 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (33.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 121ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:19:13 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 44.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:19:13 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:19:14 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:19:15 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:19:16 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:19:16 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tcM3tcd4WCtxcP6ek2Jzt7E5bbuudsBh/Ld2fdHsvcrXe+v4rL/PDMwc8MuajI8Xg2ePIcrMF6mGgk5jo9QyqA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 41ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:19:17 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:19:40 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:19:41 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:19:42 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QptZAos+swyMyLvGLXqLn8yx2ketPbDWxWpwCEk7uYMgI4VP4PkkKzGktZMklHc//u843cmHZx6/X0gWOwM24Q==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:19:42 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:22:49 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:22:59 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:23:01 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:23:03 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8wu5+IuCZO+2RlXJYWljufiYo9DL8DvT3SlDaBt+v62Rs2W14EXzyAsqW5xoh58ZysZBSq9K7BunHHt2aUYwzw==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 29ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:23:03 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 52.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:23:36 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 141ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:23:37 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:23:39 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Iz9vn1dvB77E4PXBzS23IBv7ZPylZZ72rXuo+UVT1L9Bh7PSPKiQmXmM+5TEw0uAKaWGZsHfST7XTpDnN2tb3Q==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 117ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:23:39 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 49.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:20 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 60ms (Views: 48.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:25:24 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 77ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:25 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:25 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 63ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:26 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 47.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:32 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:32 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 47ms (Views: 42.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:25:33 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:33 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:34 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:34 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:34 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:35 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:35 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:36 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 52.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:36 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:36 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:37 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 53ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:37 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 50.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:37 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:37 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:38 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:38 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 50.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:38 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:38 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:39 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:39 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:39 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:39 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:40 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:40 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:40 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 55ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:41 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:25:42 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:25:49 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 65ms (Views: 57.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:44:10 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 783ms (Views: 764.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:44:15 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"469U6XLsi1YksDPDyIJqd048XASmMnF7Mbf9UECS5rRRZYT2BlETOFH3HCdUSDqH+3sAuAKuIwhQ+HiVW8sN0A==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 114ms (ActiveRecord: 19.4ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:44:15 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (26.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 179ms (Views: 79.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:44:22 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:44:25 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 133ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:44:29 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M/VWWzpLgtT+aYGrXprIZKx3IuV8ZOVpNf+cdMdpDQ9RTYoWUYwV80MFj/5XdDTEninAfxjeMqFPyqRqtVGCbQ==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 15ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:44:29 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 51.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:45:08 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 164ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:46:02 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 90ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:46:04 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"emyABdabYcpJ1sOxzZNWbHBP87bbUVvhwFRWOLNywxQY1FxIvVz27fS6zeTEfarMQhERLL/rjCm6YW4mwUpMdg==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 10ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:46:04 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 48.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:46:21 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 45ms (Views: 38.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:46:21 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 104ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:46:22 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 65ms (Views: 59.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:46:22 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 84ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:46:38 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:48:39 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 662ms (Views: 627.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:48:43 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 84ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:48:45 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jDNZmSKDGbPwQPTyjHGAHS6Ie+kM99d+3Th4Xtjncwbui4XUSUSOlE0s+qeFn3y9HNaZc2hNALanDUBAqt/8ZA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 117ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:48:46 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 91ms (Views: 54.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:49:00 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:49:01 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:50:11 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 60ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:50:12 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 54ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:50:14 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:50:16 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 134ms (Views: 52.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:50:16 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 63ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:50:17 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:50:18 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:50:18 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xRQ6QMJCDE01db5lNd1qRcrIkdIK+aV5Ygg2VGrX1QenrOYNqYWbaogZsDA8M5bl+JZzSG5DcrEYPQ5KGO9aZQ==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:50:18 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:50:21 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 84ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2018-11-01 14:51:46 +0100
+Processing by GossipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"btUSnm/NNCbudMhryoz6rKUmK6qjCyXtf1Wjrzv/ouPrpSBhci9SVI4gFakyDC1gRrKl9dgcUk/4qJDoXJC+0g==", "gossip"=>{"anonymous_gossiper"=>"Vivien", "title"=>"azertyuio", "content"=>"fvbczezicbeuzycbez cezg !cez cgez cezgec!ègcez"}, "commit"=>"Valider"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:10
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:10
+Completed 422 Unprocessable Entity in 909ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/gossips_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:51:59 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 380ms (Views: 335.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:52:01 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 87ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:52:03 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ixrXPUaj175IpFYU9qWURPkY7H3dRuMy+VBWDTV90GbpogtwLWRAmfXIWEH/S2jky0YO57n8NPqDZW4TR0VfBA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 7ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:52:03 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 55ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:54:24 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 660ms (Views: 635.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:54:26 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:54:28 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OlHcNWT0FgYM+T9KO/rQPlsio5EBLkX4qZWjaYy9b9lY6QB4DzOBIbGVMR8yFCyeaXxBC2WUkjDToJt3/oXguw==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:54:28 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:54:31 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 43.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:54:32 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:54:32 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 62.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 14:54:33 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2018-11-01 14:54:41 +0100
+Processing by GossipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eT8+QK525ehMSJxXWwgFkMNOrrxlpqqjIgzsXt4h5Mb8Twy/s5SDmiwcQZWjiNJcINog4x6x3QGl8d8ZuU749w==", "gossip"=>{"anonymous_gossiper"=>"aze", "title"=>"azeaz", "content"=>"azeazeaze"}, "commit"=>"Valider"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/gossips_controller.rb:10
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/gossips_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:54:57 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 80ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:55:20 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 88ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:55:29 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 55ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:56:04 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:05 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:56:06 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:09 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:56:10 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:11 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:56:11 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iOxQX7KtJmHu4DGBsaqCc9Jxl68h8YwwbIWsZzJ5ZubqVIwS2WqxRlOMP9S4RH7T4C91NUVLW/gWsJR5QEHphA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:56:12 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 67ms (Views: 41.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:56:13 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:14 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:56:15 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:16 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:56:17 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rmy+P76nKRZ5v3GzPgeEP1bPV8cPLkKY2zKypZ+BCwjM1GJy1WC+McTTf+Y36XifZJG1XWuUlVChB4q77bmEag==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:56:17 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:56:25 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:28 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:56:29 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:56:29 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:59:22 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 48ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:59:24 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"auTGcLCVDY+SyloCvDv4Ggde84bvIH3WDtcg6UPeY4MIXBo921KaqC+mVFe11QS6NQARHIuaqh504hj3Mebs4Q==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 108ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:59:24 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 15:02:13 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 597ms (Views: 579.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 15:02:15 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (20.0ms)
+Completed 200 OK in 87ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 15:02:16 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVODCAvH+j2mImez3aygbQZKnpRgFjMaxx9eJcWLd6Zr619FYABtGhtOaebUQlzNNBR8DgSs5NK9KmY7t7P4xA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 548ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 15:02:17 +0100
+Processing by UsersController#home as HTML
+  [1m[36mUser Load (16.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 82ms (Views: 41.8ms | ActiveRecord: 16.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 15:02:57 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVODCAvH+j2mImez3aygbQZKnpRgFjMaxx9eJcWLd6Zr619FYABtGhtOaebUQlzNNBR8DgSs5NK9KmY7t7P4xA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 21ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 15:02:57 +0100
+Processing by UsersController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 747ms (Views: 714.1ms | ActiveRecord: 0.4ms)
+
+

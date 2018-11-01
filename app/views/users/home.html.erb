@@ -1,0 +1,6 @@
+<% if @current_user %>
+  <h1>Bienvenue <%= @current_user.name %> !</h1>
+<% else %>
+  <h1>Bienvenue visiteur anonyme !</h1>
+  <a href="/users/login">S'identifier</a>
+<% end %>
