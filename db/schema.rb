@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2018_10_31_143352) do
   create_table "gossips", force: :cascade do |t|
     t.string "title"
     t.text "content"
-    t.string "anonymous_goossiper"
+    t.string "anonymous_gossiper"
     t.bigint "user_id"
     t.bigint "comment_id"
     t.bigint "like_id"
@@ -59,6 +59,8 @@ ActiveRecord::Schema.define(version: 2018_10_31_143352) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "email"
+    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

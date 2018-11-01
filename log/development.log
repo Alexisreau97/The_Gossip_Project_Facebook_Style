@@ -49,7 +49,7 @@ Migrating to CreateTags (20181031135739)
 Migrating to CreateGossips (20181031140553)
   [1m[35m (41.3ms)[0m  [1m[35mBEGIN[0m
   ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
-  [1m[35m (99.2ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_goossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_9e6296a836"
+  [1m[35m (99.2ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_9e6296a836"
 FOREIGN KEY ("user_id")
   REFERENCES "users" ("id")
 , CONSTRAINT "fk_rails_f826af0ca2"
@@ -130,8 +130,8 @@ Completed 200 OK in 263ms (Views: 193.5ms | ActiveRecord: 4.4ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 09:47:52 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TBYknC3QF9DmzcsMAk5a9UUdKQYYscH4i8dxg2cQXHXJZhZjMDJxooaZFs76zo05pomnWWOmtloMOkLEAH9ARA==", "gossip"=>{"anonymous_goossiper"=>"Alexis", "title"=>"Mon super potin", "content"=>"azertyuiopazertyuiop"}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TBYknC3QF9DmzcsMAk5a9UUdKQYYscH4i8dxg2cQXHXJZhZjMDJxooaZFs76zo05pomnWWOmtloMOkLEAH9ARA==", "gossip"=>{"anonymous_gossiper"=>"Alexis", "title"=>"Mon super potin", "content"=>"azertyuiopazertyuiop"}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (48.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Mon super potin"], ["content", "azertyuiopazertyuiop"], ["created_at", "2018-11-01 08:47:52.759169"], ["updated_at", "2018-11-01 08:47:52.759169"]]
@@ -650,8 +650,8 @@ Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 0.0ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 09:58:49 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x4g2YCeXeLCLHvTGgg8i5b839HihvgLlU/AsWSWuqPtC+ASfOnUewutKKQR6j/UpXKN6J9qpdUfUDR8eQsG0yg==", "gossip"=>{"anonymous_goossiper"=>"test", "title"=>"test", "content"=>"test"}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x4g2YCeXeLCLHvTGgg8i5b839HihvgLlU/AsWSWuqPtC+ASfOnUewutKKQR6j/UpXKN6J9qpdUfUDR8eQsG0yg==", "gossip"=>{"anonymous_gossiper"=>"test", "title"=>"test", "content"=>"test"}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (56.8ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "test"], ["content", "test"], ["created_at", "2018-11-01 08:58:49.284095"], ["updated_at", "2018-11-01 08:58:49.284095"]]
@@ -819,8 +819,8 @@ Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.0ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:01:17 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IH2crmN2Y9OTPSa0iDrBjmmm9O4NYs0yBOT7Mjq/DUClDa5RfpQFofNp+3ZwuhZCijJ6sXZ1upCDGch1XdARcQ==", "gossip"=>{"anonymous_goossiper"=>"test", "title"=>"test", "content"=>"test"}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IH2crmN2Y9OTPSa0iDrBjmmm9O4NYs0yBOT7Mjq/DUClDa5RfpQFofNp+3ZwuhZCijJ6sXZ1upCDGch1XdARcQ==", "gossip"=>{"anonymous_gossiper"=>"test", "title"=>"test", "content"=>"test"}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (2.2ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "test"], ["content", "test"], ["created_at", "2018-11-01 09:01:17.069316"], ["updated_at", "2018-11-01 09:01:17.069316"]]
@@ -863,8 +863,8 @@ Completed 200 OK in 59ms (Views: 37.4ms | ActiveRecord: 0.0ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:01:37 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UdKG4pLkOAW5DW18YQIMGzVoc2FQVm4koJxRe9H5ngLUorQdjwZed9lZsL6ZgtvX1vz9PitBGYYnYWI8tpaCMw==", "gossip"=>{"anonymous_goossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UdKG4pLkOAW5DW18YQIMGzVoc2FQVm4koJxRe9H5ngLUorQdjwZed9lZsL6ZgtvX1vz9PitBGYYnYWI8tpaCMw==", "gossip"=>{"anonymous_gossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (3.3ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", ""], ["content", ""], ["created_at", "2018-11-01 09:01:37.624209"], ["updated_at", "2018-11-01 09:01:37.624209"]]
@@ -963,10 +963,10 @@ Completed 200 OK in 45ms (Views: 40.2ms | ActiveRecord: 0.9ms)
 
 Started PATCH "/gossips/3" for 127.0.0.1 at 2018-11-01 10:02:54 +0100
 Processing by GossipsController#update as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p7jw/zmmYO0u+nSKJL3D7cwfuhX9Lxc5fhExD6zhygjriFiQrf0o/Tfd+R/WosTdLlZZwK9i2nev5B9ZCSxFdQ==", "gossip"=>{"anonymous_goossiper"=>"", "title"=>"test", "content"=>"test"}, "commit"=>"Valider", "id"=>"3"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p7jw/zmmYO0u+nSKJL3D7cwfuhX9Lxc5fhExD6zhygjriFiQrf0o/Tfd+R/WosTdLlZZwK9i2nev5B9ZCSxFdQ==", "gossip"=>{"anonymous_gossiper"=>"", "title"=>"test", "content"=>"test"}, "commit"=>"Valider", "id"=>"3"}
   [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
   ↳ app/controllers/gossips_controller.rb:22
-Unpermitted parameter: :anonymous_goossiper
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:24
   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
@@ -1254,8 +1254,8 @@ Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.0ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:04:43 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNiqZAU3uFxCTLojdBN+qpT7qfvJB1cuCU7gctk9EVL5qJibGNXeLiIYZ+GMk6lmd28npLIQIIyOs9M1vlINYw==", "gossip"=>{"anonymous_goossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNiqZAU3uFxCTLojdBN+qpT7qfvJB1cuCU7gctk9EVL5qJibGNXeLiIYZ+GMk6lmd28npLIQIIyOs9M1vlINYw==", "gossip"=>{"anonymous_gossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (0.8ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", ""], ["content", ""], ["created_at", "2018-11-01 09:04:43.097248"], ["updated_at", "2018-11-01 09:04:43.097248"]]
@@ -1270,8 +1270,8 @@ Completed 200 OK in 105ms (Views: 41.5ms | ActiveRecord: 42.6ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:04:49 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNiqZAU3uFxCTLojdBN+qpT7qfvJB1cuCU7gctk9EVL5qJibGNXeLiIYZ+GMk6lmd28npLIQIIyOs9M1vlINYw==", "gossip"=>{"anonymous_goossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNiqZAU3uFxCTLojdBN+qpT7qfvJB1cuCU7gctk9EVL5qJibGNXeLiIYZ+GMk6lmd28npLIQIIyOs9M1vlINYw==", "gossip"=>{"anonymous_gossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (0.7ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", ""], ["content", ""], ["created_at", "2018-11-01 09:04:49.257694"], ["updated_at", "2018-11-01 09:04:49.257694"]]
@@ -1323,8 +1323,8 @@ Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:05:35 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yhA+BI7YWUrq/QiYkXxLX2m8UiAOVVQF6sB1EUcqoghPYAz7kzo/OIqp1Vpp/JyTiijcf3VCI6dtPUZWIEW+OQ==", "gossip"=>{"anonymous_goossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yhA+BI7YWUrq/QiYkXxLX2m8UiAOVVQF6sB1EUcqoghPYAz7kzo/OIqp1Vpp/JyTiijcf3VCI6dtPUZWIEW+OQ==", "gossip"=>{"anonymous_gossiper"=>"", "title"=>"", "content"=>""}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (82.4ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", ""], ["content", ""], ["created_at", "2018-11-01 09:05:35.961165"], ["updated_at", "2018-11-01 09:05:35.961165"]]
@@ -1511,7 +1511,7 @@ Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.4ms)
   ↳ db/schema.rb:18
   [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "gossips" CASCADE[0m
   ↳ db/schema.rb:25
-  [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_goossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ db/schema.rb:25
   [1m[35m (43.0ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_comment_id" ON "gossips"  ("comment_id")[0m
   ↳ db/schema.rb:25
@@ -1600,7 +1600,7 @@ FOREIGN KEY ("user_id")
   ↳ db/schema.rb:18
   [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "gossips" CASCADE[0m
   ↳ db/schema.rb:25
-  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_goossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ db/schema.rb:25
   [1m[35m (12.2ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_comment_id" ON "gossips"  ("comment_id")[0m
   ↳ db/schema.rb:25
@@ -1715,8 +1715,8 @@ Completed 200 OK in 87ms (Views: 60.8ms | ActiveRecord: 6.2ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:08:01 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BQ4U67phBAr10p396prxs7rGiGECPRE+gbcvIE+ipyaAfiYUp4NieJWGQD8SGiZ/WVIGPnkqZpwGShxnKM27Fw==", "gossip"=>{"anonymous_goossiper"=>"Alexis", "title"=>"Mon nouveau gossip", "content"=>"potinpotin"}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BQ4U67phBAr10p396prxs7rGiGECPRE+gbcvIE+ipyaAfiYUp4NieJWGQD8SGiZ/WVIGPnkqZpwGShxnKM27Fw==", "gossip"=>{"anonymous_gossiper"=>"Alexis", "title"=>"Mon nouveau gossip", "content"=>"potinpotin"}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (1.6ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Mon nouveau gossip"], ["content", "potinpotin"], ["created_at", "2018-11-01 09:08:01.210798"], ["updated_at", "2018-11-01 09:08:01.210798"]]
@@ -1774,10 +1774,10 @@ Completed 200 OK in 45ms (Views: 32.4ms | ActiveRecord: 0.4ms)
 
 Started PATCH "/gossips/1" for 127.0.0.1 at 2018-11-01 10:08:14 +0100
 Processing by GossipsController#update as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0gkz9qLkN+hiHc6WesTmuKzVOts8h2QxCAKhyZnLIYkqggTAgKNDB2HjfiO5wlDAqJ98EFNqnZIvY4KDSpLaLg==", "gossip"=>{"anonymous_goossiper"=>"", "title"=>"Mon nouveau gossip", "content"=>"potinpotinpotin"}, "commit"=>"Valider", "id"=>"1"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0gkz9qLkN+hiHc6WesTmuKzVOts8h2QxCAKhyZnLIYkqggTAgKNDB2HjfiO5wlDAqJ98EFNqnZIvY4KDSpLaLg==", "gossip"=>{"anonymous_gossiper"=>"", "title"=>"Mon nouveau gossip", "content"=>"potinpotinpotin"}, "commit"=>"Valider", "id"=>"1"}
   [1m[36mGossip Load (1.2ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/gossips_controller.rb:22
-Unpermitted parameter: :anonymous_goossiper
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:24
   [1m[36mGossip Update (0.8ms)[0m  [1m[33mUPDATE "gossips" SET "content" = $1, "updated_at" = $2 WHERE "gossips"."id" = $3[0m  [["content", "potinpotinpotin"], ["updated_at", "2018-11-01 09:08:14.959238"], ["id", 1]]
@@ -1865,10 +1865,10 @@ Completed 200 OK in 48ms (Views: 40.7ms | ActiveRecord: 1.2ms)
 
 Started PATCH "/gossips/1" for 127.0.0.1 at 2018-11-01 10:08:50 +0100
 Processing by GossipsController#update as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QKbqyyAXbSx6KPE9CaR/ijxhyIWVyeVER+reVXVltt+4Ld39AlAZw3nWQYjKosnyOCuOTvokHOdgi/0fpjxNeA==", "gossip"=>{"anonymous_goossiper"=>"Alexis", "title"=>"Mon nouveau gossip", "content"=>"potinpotinpotin"}, "commit"=>"Valider", "id"=>"1"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QKbqyyAXbSx6KPE9CaR/ijxhyIWVyeVER+reVXVltt+4Ld39AlAZw3nWQYjKosnyOCuOTvokHOdgi/0fpjxNeA==", "gossip"=>{"anonymous_gossiper"=>"Alexis", "title"=>"Mon nouveau gossip", "content"=>"potinpotinpotin"}, "commit"=>"Valider", "id"=>"1"}
   [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   ↳ app/controllers/gossips_controller.rb:22
-Unpermitted parameter: :anonymous_goossiper
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:24
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
@@ -2307,8 +2307,8 @@ Completed 200 OK in 121ms (Views: 118.6ms | ActiveRecord: 0.0ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:23:06 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2STfmCc6S321qblTEdqwPDWvDq4TQdOZXUDO2uLVBbdcVO1nOtgtD9X9ZJHpWmfw1juA8WhWpDvavf2dhboZhg==", "gossip"=>{"anonymous_goossiper"=>"alexis", "title"=>"azertyui", "content"=>"azertyuio"}, "commit"=>"Valider"}
-Unpermitted parameter: :anonymous_goossiper
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2STfmCc6S321qblTEdqwPDWvDq4TQdOZXUDO2uLVBbdcVO1nOtgtD9X9ZJHpWmfw1juA8WhWpDvavf2dhboZhg==", "gossip"=>{"anonymous_gossiper"=>"alexis", "title"=>"azertyui", "content"=>"azertyuio"}, "commit"=>"Valider"}
+Unpermitted parameter: :anonymous_gossiper
   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
   [1m[36mGossip Create (1.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "azertyui"], ["content", "azertyuio"], ["created_at", "2018-11-01 09:23:06.625780"], ["updated_at", "2018-11-01 09:23:06.625780"]]
@@ -2370,10 +2370,10 @@ Completed 200 OK in 65ms (Views: 32.1ms | ActiveRecord: 10.3ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:26:36 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UsVOtSqMSWu1Omzlb1ViBCmS3jguAyrFSuIJvez8NxvXtXxKN24vGdVusSeX1bXIygZQZ1UUXWfNHzr6i5MrKg==", "gossip"=>{"anonymous_goossiper"=>"azertyui", "title"=>"azrfgnh", "content"=>"cccc"}, "commit"=>"Valider"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UsVOtSqMSWu1Omzlb1ViBCmS3jguAyrFSuIJvez8NxvXtXxKN24vGdVusSeX1bXIygZQZ1UUXWfNHzr6i5MrKg==", "gossip"=>{"anonymous_gossiper"=>"azertyui", "title"=>"azrfgnh", "content"=>"cccc"}, "commit"=>"Valider"}
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
-  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "anonymous_goossiper", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "azrfgnh"], ["content", "cccc"], ["anonymous_goossiper", "azertyui"], ["created_at", "2018-11-01 09:26:36.038936"], ["updated_at", "2018-11-01 09:26:36.038936"]]
+  [1m[36mGossip Create (0.5ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "anonymous_gossiper", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "azrfgnh"], ["content", "cccc"], ["anonymous_gossiper", "azertyui"], ["created_at", "2018-11-01 09:26:36.038936"], ["updated_at", "2018-11-01 09:26:36.038936"]]
   ↳ app/controllers/gossips_controller.rb:10
   [1m[35m (113.2ms)[0m  [1m[35mCOMMIT[0m
   ↳ app/controllers/gossips_controller.rb:10
@@ -2546,7 +2546,7 @@ Completed 200 OK in 49ms (Views: 45.2ms | ActiveRecord: 1.2ms)
   ↳ db/schema.rb:18
   [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "gossips" CASCADE[0m
   ↳ db/schema.rb:25
-  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_goossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ db/schema.rb:25
   [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_comment_id" ON "gossips"  ("comment_id")[0m
   ↳ db/schema.rb:25
@@ -2635,7 +2635,7 @@ FOREIGN KEY ("user_id")
   ↳ db/schema.rb:18
   [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "gossips" CASCADE[0m
   ↳ db/schema.rb:25
-  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_goossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ db/schema.rb:25
   [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_comment_id" ON "gossips"  ("comment_id")[0m
   ↳ db/schema.rb:25
@@ -2750,10 +2750,10 @@ Completed 200 OK in 96ms (Views: 58.6ms | ActiveRecord: 8.1ms)
 
 Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:28:53 +0100
 Processing by GossipsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6XlPcxOkr9tETBaHUgCWiP2nI+2mvFs9iFE+qR279mZsCX2MDkbJqSQYy0WqgEFEHjOtst2rLJ8PrA3uetTqVw==", "gossip"=>{"anonymous_goossiper"=>"Alexis", "title"=>"Mon premier potin", "content"=>"comment il est trop bien mon potin un truc de ouf"}, "commit"=>"Valider"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6XlPcxOkr9tETBaHUgCWiP2nI+2mvFs9iFE+qR279mZsCX2MDkbJqSQYy0WqgEFEHjOtst2rLJ8PrA3uetTqVw==", "gossip"=>{"anonymous_gossiper"=>"Alexis", "title"=>"Mon premier potin", "content"=>"comment il est trop bien mon potin un truc de ouf"}, "commit"=>"Valider"}
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ app/controllers/gossips_controller.rb:10
-  [1m[36mGossip Create (1.9ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "anonymous_goossiper", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mon premier potin"], ["content", "comment il est trop bien mon potin un truc de ouf"], ["anonymous_goossiper", "Alexis"], ["created_at", "2018-11-01 09:28:53.336497"], ["updated_at", "2018-11-01 09:28:53.336497"]]
+  [1m[36mGossip Create (1.9ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "anonymous_gossiper", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mon premier potin"], ["content", "comment il est trop bien mon potin un truc de ouf"], ["anonymous_gossiper", "Alexis"], ["created_at", "2018-11-01 09:28:53.336497"], ["updated_at", "2018-11-01 09:28:53.336497"]]
   ↳ app/controllers/gossips_controller.rb:10
   [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
   ↳ app/controllers/gossips_controller.rb:10
@@ -2782,5 +2782,2107 @@ Processing by GossipsController#index as HTML
   Rendered gossips/index.html.erb within layouts/application (7.1ms)
   Rendered layouts/_header.html.erb (0.6ms)
 Completed 200 OK in 49ms (Views: 40.8ms | ActiveRecord: 3.3ms)
+
+
+  [1m[35m (46.1ms)[0m  [1m[35mCREATE DATABASE "the-gossip-project_development" ENCODING = 'unicode'[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "the-gossip-project_test" ENCODING = 'unicode'[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (14.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Started GET "/" for 127.0.0.1 at 2018-11-01 10:40:13 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (56.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 948ms (Views: 846.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:40:17 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (55.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 244ms (Views: 72.0ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 10:40:20 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 10:40:21 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:40:22 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 10:40:23 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:40:49 +0100
+Processing by GossipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dAZrJdjshk7GQ3JhwkMaB98d23FgsTNUI6WUyq3gAXLxdlnaxQ7gPKYXr6M6w83LPIlVLhumRPakWKeNyo8dQw==", "gossip"=>{"anonymous_gossiper"=>"Jean Dupond", "title"=>"le potin de la mort", "content"=>"potinpotin"}, "commit"=>"Valider"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:10
+  [1m[36mGossip Create (1.9ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "anonymous_gossiper", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "le potin de la mort"], ["content", "potinpotin"], ["anonymous_gossiper", "Jean Dupond"], ["created_at", "2018-11-01 09:40:49.774149"], ["updated_at", "2018-11-01 09:40:49.774149"]]
+  ↳ app/controllers/gossips_controller.rb:10
+  [1m[35m (49.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:10
+  Rendering gossips/create.html.erb within layouts/application
+  Rendered gossips/create.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 110ms (Views: 34.5ms | ActiveRecord: 51.3ms)
+
+
+Started GET "/gossips/2" for 127.0.0.1 at 2018-11-01 10:40:52 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:14
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:40:55 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 30.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:40:58 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 40.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 10:40:59 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 10:40:59 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 107ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateJoinTableGossipTag (20181031143352)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (102.0ms)[0m  [1m[35mDROP TABLE "gossips_tags"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031143352"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (74.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateGossips (20181031140553)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (62.7ms)[0m  [1m[35mDROP TABLE "gossips"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031140553"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (64.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (46.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateTags (20181031135739)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "tags"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031135739"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateLikes (20181031135717)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE "likes"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031135717"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateComments (20181031135347)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031135347"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (43.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateUsers (20181031134951)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031134951"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateUsers (20181031134951)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (187.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031134951_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031134951"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateComments (20181031135347)
+  [1m[35m (25.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (37.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "content" character varying, "anonymous_commentor" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031135347_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031135347"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateLikes (20181031135717)
+  [1m[35m (31.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "status" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031135717_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031135717"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateTags (20181031135739)
+  [1m[35m (40.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031135739_create_tags.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031135739"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateGossips (20181031140553)
+  [1m[35m (30.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (49.7ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_9e6296a836"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_f826af0ca2"
+FOREIGN KEY ("comment_id")
+  REFERENCES "comments" ("id")
+, CONSTRAINT "fk_rails_c6fd3410b4"
+FOREIGN KEY ("like_id")
+  REFERENCES "likes" ("id")
+, CONSTRAINT "fk_rails_c6733acabd"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+)[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_user_id" ON "gossips"  ("user_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_comment_id" ON "gossips"  ("comment_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_like_id" ON "gossips"  ("like_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_tag_id" ON "gossips"  ("tag_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031140553"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateJoinTableGossipTag (20181031143352)
+  [1m[35m (40.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "gossips_tags" ("gossip_id" bigint NOT NULL, "tag_id" bigint NOT NULL)[0m
+  ↳ db/migrate/20181031143352_create_join_table_gossip_tag.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_tags_on_gossip_id_and_tag_id" ON "gossips_tags"  ("gossip_id", "tag_id")[0m
+  ↳ db/migrate/20181031143352_create_join_table_gossip_tag.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_tags_on_tag_id_and_gossip_id" ON "gossips_tags"  ("tag_id", "gossip_id")[0m
+  ↳ db/migrate/20181031143352_create_join_table_gossip_tag.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031143352"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (11.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateJoinTableGossipTag (20181031143352)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "gossips_tags"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031143352"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateGossips (20181031140553)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE "gossips"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031140553"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateTags (20181031135739)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "tags"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031135739"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateLikes (20181031135717)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "likes"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031135717"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateComments (20181031135347)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031135347"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateUsers (20181031134951)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181031134951"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateUsers (20181031134951)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (75.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031134951_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031134951"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateComments (20181031135347)
+  [1m[35m (40.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "content" character varying, "anonymous_commentor" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031135347_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031135347"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateLikes (20181031135717)
+  [1m[35m (25.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "status" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031135717_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031135717"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateTags (20181031135739)
+  [1m[35m (41.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181031135739_create_tags.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031135739"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateGossips (20181031140553)
+  [1m[35m (63.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (59.2ms)[0m  [1m[35mCREATE TABLE "gossips" ("id" bigserial primary key, "title" character varying, "content" text, "anonymous_gossiper" character varying, "user_id" bigint, "comment_id" bigint, "like_id" bigint, "tag_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_9e6296a836"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_f826af0ca2"
+FOREIGN KEY ("comment_id")
+  REFERENCES "comments" ("id")
+, CONSTRAINT "fk_rails_c6fd3410b4"
+FOREIGN KEY ("like_id")
+  REFERENCES "likes" ("id")
+, CONSTRAINT "fk_rails_c6733acabd"
+FOREIGN KEY ("tag_id")
+  REFERENCES "tags" ("id")
+)[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (22.4ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_user_id" ON "gossips"  ("user_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_comment_id" ON "gossips"  ("comment_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_like_id" ON "gossips"  ("like_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_on_tag_id" ON "gossips"  ("tag_id")[0m
+  ↳ db/migrate/20181031140553_create_gossips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031140553"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateJoinTableGossipTag (20181031143352)
+  [1m[35m (39.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "gossips_tags" ("gossip_id" bigint NOT NULL, "tag_id" bigint NOT NULL)[0m
+  ↳ db/migrate/20181031143352_create_join_table_gossip_tag.rb:3
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_tags_on_gossip_id_and_tag_id" ON "gossips_tags"  ("gossip_id", "tag_id")[0m
+  ↳ db/migrate/20181031143352_create_join_table_gossip_tag.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_gossips_tags_on_tag_id_and_gossip_id" ON "gossips_tags"  ("tag_id", "gossip_id")[0m
+  ↳ db/migrate/20181031143352_create_join_table_gossip_tag.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181031143352"]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(702395403811080105)[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Started GET "/" for 127.0.0.1 at 2018-11-01 10:54:59 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 522ms (Views: 445.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:55:02 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (108.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (116.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 203ms (Views: 35.2ms | ActiveRecord: 112.8ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 10:55:04 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 46.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:55:05 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 10:55:06 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2018-11-01 10:55:13 +0100
+Processing by GossipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qv+4SK2l+8BEW5UpVLaAEES0/33KLla3UXh02dEv6pgvj4q3sEedsiQPSOusNlfcpyBxIrE5IRXWhUeetkD2qQ==", "gossip"=>{"anonymous_gossiper"=>"alexis", "title"=>"azertyuio", "content"=>"azertuioqsdfhjklxcvbn"}, "commit"=>"Valider"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:10
+  [1m[36mGossip Create (2.8ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "anonymous_gossiper", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "azertyuio"], ["content", "azertuioqsdfhjklxcvbn"], ["anonymous_gossiper", "alexis"], ["created_at", "2018-11-01 09:55:13.998708"], ["updated_at", "2018-11-01 09:55:13.998708"]]
+  ↳ app/controllers/gossips_controller.rb:10
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:10
+  Rendering gossips/create.html.erb within layouts/application
+  Rendered gossips/create.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 122ms (Views: 46.4ms | ActiveRecord: 41.7ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 10:55:15 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:14
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 117ms (Views: 46.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 10:55:17 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 33.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 10:55:21 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:14
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 35.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:04:11 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 644ms (Views: 623.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:04:12 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-11-01 11:04:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user/new"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:04:44 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112256231760'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:05:45 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (168.2ms)
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 12.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f88916febd8>:0x00007f88916fd210>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112266156580'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:06:11 +0100
+Processing by RegistrationController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RegistrationController::Users):
+  
+app/controllers/registration_controller.rb:3:in `new'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:07:00 +0100
+Processing by RegistrationController#new as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RegistrationController::Users):
+  
+app/controllers/registration_controller.rb:3:in `new'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:08:27 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 10.3ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @users do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112221855660'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:08:41 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Gossip:0x00007f8890208f08>):
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+    7: 	</div>
+    8: 
+    9: 	<div class="form-group">
+  
+app/views/registration/new.html.erb:6:in `block in _app_views_registration_new_html_erb___1011616081004630070_70112222805260'
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112222805260'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:10:00 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:10:06 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Gossip:0x00007f88916f5100>):
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+    7: 	</div>
+    8: 
+    9: 	<div class="form-group">
+  
+app/views/registration/new.html.erb:6:in `block in _app_views_registration_new_html_erb___1011616081004630070_70112256465920'
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112256465920'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:10:36 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (169.3ms)
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 6.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f88903b24f8>:0x00007f88903b0608>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112256038580'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:11:52 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 359ms (Views: 355.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:11:56 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:12:23 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (326.4ms)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_registrations_path' for #<#<Class:0x00007f888d6a5050>:0x00007f8891458ed8>
+Did you mean?  new_registration_path
+               new_registration_url):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", new_registrations_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb___2604813003682265429_70112264771000'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:12:27 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (392.8ms)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_registrations_path' for #<#<Class:0x00007f888d6a5050>:0x00007f88912c8d98>
+Did you mean?  new_registration_path
+               new_registration_url):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", new_registrations_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb___2604813003682265429_70112263951200'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:12:35 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 375ms (Views: 371.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:12:38 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:13:42 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (153.3ms)
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f88903b24f8>:0x00007f888caba920>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112226182920'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:13:51 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:15:11 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (318.6ms)
+Completed 500 Internal Server Error in 339ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_registrations_path' for #<#<Class:0x00007f888d6a5050>:0x00007f888c3b6890>
+Did you mean?  new_registration_path
+               new_registration_url):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", new_registrations_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb___2604813003682265429_70112222504300'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:15:28 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 247ms (Views: 244.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:15:31 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:15:36 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:16:45 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/registration/new" for 127.0.0.1 at 2018-11-01 11:16:55 +0100
+Processing by RegistrationController#new as HTML
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (149.3ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f88903b24f8>:0x00007f888c4841f0>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registration/new.html.erb:3:in `_app_views_registration_new_html_erb___1011616081004630070_70112222914380'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:17:23 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:17:26 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:18:10 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:18:13 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 111ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:18:17 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:19:23 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 117ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 11:19:25 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (45.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 130ms (Views: 73.6ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 11:19:26 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 139ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:19:27 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 11:19:29 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 66.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 11:19:29 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 11:19:30 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 11:19:32 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:14
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 85ms (Views: 38.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:19:35 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:20:07 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:21:13 +0100
+  
+ActionController::RoutingError (uninitialized constant RegistrationsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:27:12 +0100
+  [1m[35m (52.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1100ms (Views: 1050.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 11:27:16 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (3.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (42.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 150ms (Views: 71.7ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 11:27:17 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 143ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:27:18 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:27:19 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (63.5ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113523624200'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:28:54 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 138ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:28:58 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (157.2ms)
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 5.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f892b2b98d0>:0x00007f892b2b39f8>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113555763440'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:30:30 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (225.5ms)
+Completed 500 Internal Server Error in 304ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f892b803818>:0x00007f892b853980>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113558562180'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:30:43 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (154.4ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f892b392180>:0x00007f892b3906f0>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113556206780'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:32:03 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 6.7ms)
+
+
+  
+ActionView::Template::Error (uninitialized class variable @@user in ActionView::CompiledTemplates):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @@user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113522883400'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:32:18 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (154.8ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f8927419ee0>:0x00007f8927418018>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for $user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113522930560'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:33:25 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (184.6ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 10.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f8929963a70>:0x00007f8929951a00>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @registration do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113542491980'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:33:45 +0100
+Processing by RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RegistrationsController::Users):
+  
+app/controllers/registrations_controller.rb:3:in `new'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:34:05 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (163.0ms)
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 4.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f892ba64b20>:0x00007f892ba5ea68>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @registration do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113559783980'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:36:47 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (185.8ms)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<#<Class:0x00007f892757e268>:0x00007f892756f920>):
+    1: <h1>Création d'un utilisateur</h1>
+    2: 
+    3: <%= form_for @user do |f|%>
+    4: 	<div class="form-group">
+    5: 		<label>Ton pseudo</label>
+    6: 		<%= f.text_field :name, class: 'form-control' %>
+  
+app/views/registrations/new.html.erb:3:in `_app_views_registrations_new_html_erb___1391823916830920367_70113523660200'
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:43:50 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 536ms (Views: 517.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:43:54 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 113ms (Views: 43.0ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:43:58 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:45:59 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 11:46:08 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:46:10 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 95ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:47:43 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 746ms (Views: 730.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:48:03 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 238ms (Views: 210.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:51:18 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:52:01 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:52:43 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:53:56 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 627ms (Views: 623.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 11:55:44 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 538ms (Views: 534.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-01 12:01:32 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 12:02:59 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 749ms (Views: 745.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (290.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Alexis"], ["email", "alexis@gmail.com"], ["password", "azerty"], ["created_at", "2018-11-01 11:09:31.392392"], ["updated_at", "2018-11-01 11:09:31.392392"]]
+  [1m[35m (121.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 12:10:06 +0100
+  [1m[35m (21.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (61.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 814ms (Views: 704.6ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-01 12:10:28 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 12:10:40 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 182ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations/new" for 127.0.0.1 at 2018-11-01 12:10:43 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 53.2ms | ActiveRecord: 0.0ms)
 
 

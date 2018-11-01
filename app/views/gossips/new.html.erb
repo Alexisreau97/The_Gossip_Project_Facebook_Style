@@ -3,21 +3,20 @@
 <%= form_for @gossip do |f|%>
 	<div class="form-group">
 		<label>Ton Pseudo</label>
-		<%= f.text_field :anonymous_goossiper, class: 'form-control' %>
+		<%= f.text_field :anonymous_gossiper, type: 'text', class: 'form-control' %>
 	</div>
 
 	<div class="form-group">
 		<label>Entre titre</label>
-		<%= f.text_field :title, class: 'form-control' %>
+		<%= f.text_field :title, type: 'text', class: 'form-control' %>
 	</div>
 
 	<div class="form-group">
 		<label>Écrit ton potin</label>
-		<%= f.text_area :content, class: 'form-control' %>
+		<%= f.text_area :content, type: 'text', class: 'form-control' %>
 	</div>
 
 	<div class="form-group">
     	<%= f.submit "Valider", class: 'btn btn-success' %>
   	</div>
-
 <% end %>

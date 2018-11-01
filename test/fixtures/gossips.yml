@@ -3,7 +3,7 @@
 one:
   title: MyString
   content: MyText
-  anonymous_goossiper: MyString
+  anonymous_gossiper: MyString
   user: one
   comment: one
   like: one
@@ -12,7 +12,7 @@ one:
 two:
   title: MyString
   content: MyText
-  anonymous_goossiper: MyString
+  anonymous_gossiper: MyString
   user: two
   comment: two
   like: two
