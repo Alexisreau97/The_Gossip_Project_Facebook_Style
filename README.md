@@ -30,3 +30,12 @@ https://the-gossip-project-fb-style.herokuapp.com/
 
 * email : alexis@gmail.com
 * mot de passe : azerty
+
+# Check-list
+
+* Création d'utilisateur ✔️
+* Ecran de connexion avec nom de l'utilisateur et mot de passe ✔️
+* Un utilisateur peut détruire ses gossips (et uniquement les siens) ✔️
+* Possibilité de liker les potins ✖️
+* Possibilité d'enlever un like déja mis ✖️
+* Possibilité de commenter les commentaires (façon Facebook), bien sûr le nom de l'utilisateur qui a écrit le commentaire sera affiché ✖️
