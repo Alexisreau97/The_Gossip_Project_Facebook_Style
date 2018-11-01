@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  anonymous_goossiper: MyString
+  user: one
+  comment: one
+  like: one
+  tag: one
+
+two:
+  title: MyString
+  content: MyText
+  anonymous_goossiper: MyString
+  user: two
+  comment: two
+  like: two
+  tag: two

@@ -1,0 +1,7 @@
+<h1>Gossip <%= @gossip.id %></h1>
+
+<p><%= @gossip.title%> :</p>
+<p><%= @gossip.content%></p>
+<%= link_to "Editer", edit_gossip_path, class: "btn btn-lg btn-default" %>
+<%= link_to "Voir les autres gossips", gossips_path, class: "btn btn-lg btn-dark" %>
+<%= link_to 'Clique pour détruire', @gossip, method: :delete, class: "btn btn-lg btn-danger" %>
