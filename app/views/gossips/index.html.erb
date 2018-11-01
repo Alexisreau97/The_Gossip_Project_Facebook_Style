@@ -1,4 +1,12 @@
 <html>
+    <% if @current_user %>
+    <h1>Bienvenue <%= @current_user.name %> !</h1>
+    <% else %>
+    <h1>Vous n'êtes pas connecté</h1>
+    <a href="/users/login" class="btn btn-dark">S'identifier</a>
+    <br><br>
+    <% end %>
+
     <h1>Les gossips</h1>
     <p>Voici tous les gossips</p>
     <table class="table">
