@@ -33,7 +33,12 @@ class GossipsController < ApplicationController
 
 	def destroy
 		@gossip = Gossip.find(params[:id])
-	    @gossip.destroy
-	    redirect_to gossips_path
+		if @current_user && @gossip.user_id == @current_user.id
+			@gossip.destroy
+			redirect_to gossips_path
+		else
+			flash[:info] = "Ceci n'est pas votre gossip!"
+			redirect_to gossips_path
+		end
 	end
 end

@@ -14599,3 +14599,226 @@ Processing by StaticPageController#home as HTML
 Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-01 18:48:17 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 541ms (Views: 518.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 18:48:36 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (76.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 293ms (Views: 178.1ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 18:48:44 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (52.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 127ms (Views: 84.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 18:48:46 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:20
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 111ms (Views: 43.5ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/gossips/1" for 127.0.0.1 at 2018-11-01 18:48:47 +0100
+Processing by GossipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q6bqaUPrTNrH4AzxHY1zvh0CK79gICFstbmcEGQ0Y0UZbDp2N1bUtLKnIxWBRyNOqEV3A8S8cx/U9hnVf22IIQ==", "id"=>"1"}
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:35
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 18:48:47 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 74ms (Views: 69.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 18:48:51 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 18:48:52 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 18:48:53 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MlDl+mM2CaNtJdhlfrz8Mqta9IhvY54hr19lD4pyNH1Q6Dm3CPGehNBJ1jB3UgCSmQQWEgvZSenVal0R+Eq7Hw==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" DESC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 55.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 18:48:53 +0100
+Processing by StaticPageController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 18:48:56 +0100
+Processing by GossipsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 41.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 18:48:57 +0100
+Processing by GossipsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 18:48:59 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:20
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 94ms (Views: 42.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/gossips/1" for 127.0.0.1 at 2018-11-01 18:49:00 +0100
+Processing by GossipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q3U8q6jPYNAMTDa/DTOqfy+TvoisJ8gUfOO8MkDViNUZv+y03HL4vnkLGVuR+fqPmtTiNAi7mmcdrDn3W4xjsQ==", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mGossip Load (1.7ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:37
+  [1m[36mGossip::HABTM_Tags Destroy (146.4ms)[0m  [1m[31mDELETE FROM "gossips_tags" WHERE "gossips_tags"."gossip_id" = $1[0m  [["gossip_id", 1]]
+  ↳ app/controllers/gossips_controller.rb:37
+  [1m[36mGossip Destroy (0.6ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/gossips_controller.rb:37
+  [1m[35m (57.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:37
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 371ms (ActiveRecord: 209.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 18:49:00 +0100
+Processing by GossipsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 18:49:04 +0100
+Processing by GossipsController#new as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 61ms (Views: 52.2ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2018-11-01 18:49:51 +0100
+Processing by GossipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fKbhtHuW1NnMM8+6TIoo5xfMuO5iqFJn+xKTLuYV8lD51tNLZnSyq6xnEni0Cv8r9Fg2sRm/JcV876BpgXruYQ==", "gossip"=>{"anonymous_gossiper"=>"Alexis", "title"=>"Mon premier potin", "content"=>"hihihi c'est trop marrant les potins ! 😹"}, "commit"=>"Valider"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/gossips_controller.rb:12
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:12
+  [1m[36mGossip Create (83.9ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mon premier potin"], ["content", "hihihi c'est trop marrant les potins ! 😹"], ["user_id", 1], ["created_at", "2018-11-01 17:49:51.578339"], ["updated_at", "2018-11-01 17:49:51.578339"]]
+  ↳ app/controllers/gossips_controller.rb:12
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/gossips_controller.rb:12
+  Rendering gossips/create.html.erb within layouts/application
+  Rendered gossips/create.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 266ms (Views: 40.3ms | ActiveRecord: 125.9ms)
+
+
+Started GET "/gossips/2" for 127.0.0.1 at 2018-11-01 18:49:53 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mGossip Load (2.0ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:20
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 53.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 18:49:55 +0100
+Processing by GossipsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 60ms (Views: 52.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 18:50:09 +0100
+Processing by StaticPageController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 83ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
