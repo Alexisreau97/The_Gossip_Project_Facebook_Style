@@ -5530,3 +5530,1392 @@ Processing by RegistrationsController#new as HTML
 Completed 200 OK in 54ms (Views: 41.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:36:41 +0100
+  [1m[35m (20.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 690ms (Views: 637.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:36:43 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-11-01 13:36:46 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:36:53 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 66ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:37:51 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (319.7ms)
+Completed 500 Internal Server Error in 341ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x00007fdf06c783b8>:0x00007fdf05ee7938>
+Did you mean?  new_gossip_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", new_user_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb___408470732767362695_70297934121440'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:38:15 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-11-01 13:38:17 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:39:09 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (284.7ms)
+Completed 500 Internal Server Error in 306ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `home_user_path' for #<#<Class:0x00007fdf09a1a988>:0x00007fdf064907e0>
+Did you mean?  new_user_path
+               edit_user_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", home_user_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb___408470732767362695_70297929943240'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:39:29 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (337.4ms)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_user_path' for #<#<Class:0x00007fdf09a1a988>:0x00007fdf07c790f0>
+Did you mean?  edit_user_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", login_user_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb___408470732767362695_70297942478200'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:39:45 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/login" for 127.0.0.1 at 2018-11-01 13:39:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user/login"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/home" for 127.0.0.1 at 2018-11-01 13:40:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user/home"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:40:17 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 188ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/home" for 127.0.0.1 at 2018-11-01 13:40:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/home"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:40:33 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:40:39 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fDazBXRpFiH3NcoqHRYkTh8iJNXYSzkgqJqop3pUUbPO/GMaANSOT4Jy5c6B3HS+qmV4aXzXa1PJ1S1iYQ261w==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (63.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 194ms (ActiveRecord: 73.3ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:40:39 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:40:51 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bSdBtA/7wrzL7DKlsUAzmj4Cnry+jyoDWYqbaeKPfIDf7ZGre0Za0r6rHUEtimNqi0XCABoTeHA4xR6s+daX5A==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:40:51 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:40:54 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 198ms (Views: 139.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:40:57 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 59ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:41:01 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:41:04 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TbPDWEu1bQqu20jmqzIOacL+i9LJNoFtYePfW01MJggvCx8VIHL6LRO3RrOi3PLJ8KBpSK2MVqUb1udFP3Spag==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:41:04 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 55ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:41:12 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ik1KNsH6vNHYDZbxVJY0Yg1tUQp5P3C1YKtpCKVOGtmQh5optUckv61KuRXIXGSSuCoNtt2jIsYB5OzNvhfxvQ==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:41:12 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:43:11 +0100
+  [1m[35m (12.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (335.3ms)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_users_path' for #<#<Class:0x00007fd6e4d03988>:0x00007fd6e4d00c38>
+Did you mean?  users_login_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", login_users_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb__2166995679813978523_70280469316580'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:43:21 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (276.5ms)
+Completed 500 Internal Server Error in 287ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_user_path' for #<#<Class:0x00007fd6e4d03988>:0x00007fd6e4b9cc98>
+Did you mean?  edit_user_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", login_user_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb__2166995679813978523_70280468557220'
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:43:39 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (279.3ms)
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_login_path' for #<#<Class:0x00007fd6e4d03988>:0x00007fd6e4d98920>
+Did you mean?  users_login_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", user_login_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb__2166995679813978523_70280469596840'
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:43:47 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 390ms (Views: 386.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:43:55 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"451mtLYGv9h6vRo+qAQzR5ZLh+jOqzWZ80foIDUBc45RV7arwrsntg/6Ndo0zmO3IwzbVGo3Z+qSCG3lLliY6g==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 86ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:43:55 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 121ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:44:59 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:45:02 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"utBiaRx3MlZeJZyJexAEXDOX4VnKWvnreOp3X95lfvwIGrJ2aMqqOCtis23n2lSshtC95W7Gq5gZpfKaxTyVmA==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL AND "users"."password" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 21ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:45:02 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:45:06 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"He6Fcs9kuHZEW4LXYPWRwVld3ZqH/t52+5Fp0UVz0fGvJFVtu9kgGDEcrTP8P8Ex7BqBJiNijAWa3uwUXio6lQ==", "name"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL AND "users"."password" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:45:06 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:47:47 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 85ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:47:54 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G5Mo0tfStsIpnv4ZMXTacMn+7OERWQq9/80xHn/ptkGpWfjNo28urFzZ0f2tvoqAfLmwXbXFWM6egrTbZLBdJQ==", "name"=>"Alexis", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "Alexis"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 63ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:47:54 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 63ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:48:16 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:48:23 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z9xypKVdRP3pa0PQc21b6dI834q831XiC+8XSxFzvLWtZK7pzprT2lQHTYV6g6dJ4GI9ENhlgipx2i9VY0sz1w==", "name"=>"Alexis", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "Alexis"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:48:23 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:48:27 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (323.3ms)
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_login_path' for #<#<Class:0x00007fd6e4d20100>:0x00007fd6e4d114e8>
+Did you mean?  users_login_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", user_login_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb__2166995679813978523_70280469351260'
+Started GET "/user/login" for 127.0.0.1 at 2018-11-01 13:50:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user/login"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:50:51 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:50:59 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I80mETALi8Sn2Moo2BnVvpOTJPlYKFQX5Vfj+RbO1GuRB/YORLYTqtKf5cxE04VOJtR4Rfy0BmSEGGY8DZc/Dw==", "name"=>"Alexis", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["name", "Alexis"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:50:59 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:51:01 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 242ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:51:26 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 152ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:51:28 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b0QviW71yGEVn5wdq4CV9Bnxo9TgmGJqFm9RcH8iHb3djv+WGkhQD2DYs/k3SsUErLb/aEQEMBl3INS1ZHv22Q==", "name"=>"", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 291ms (ActiveRecord: 159.7ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:51:30 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:51:32 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:51:36 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+0Tczw8brqZgeg2sReEiHQ5dflEDkNEfE5dOFBdTBmGZ/ACCZNw5gd0WA/lMD969PAOcy2cqBtdponYKZWuJAw==", "name"=>"", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:51:36 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:51:40 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 69ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:54:07 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:54:27 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jsjzevKLuWpJ6uqQ7Qa676UkTlezpygSHybkQN7SlLI8AiNlhjYhBDytxXRxzOofEGMS6xc7emF+aWGFxYt/1g==", "name"=>"Alexis", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/users/home
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 13:54:27 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:54:29 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 77ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:55:57 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 154ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:57:24 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (312.2ms)
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_user_path' for #<#<Class:0x00007fd6ea205698>:0x00007fd6ea1ffb58>
+Did you mean?  edit_user_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", login_user_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb__2166995679813978523_70280513859420'
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:57:46 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 356ms (Views: 332.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:57:49 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EAsYZ5wWg2wnbo4AkTYlhDXGjKS7amkcXHYrlyyLRgqiwch46KsbAlIpoeQN/HV0gIHQGB/2O289Oa5SN9Ktbg==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 73ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 13:57:50 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (36.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (60.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 158ms (Views: 63.0ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 13:58:38 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (345.8ms)
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_user_path' for #<#<Class:0x00007fd6ea205698>:0x00007fd6e4e9e1a8>
+Did you mean?  edit_user_path):
+    3:   <h3>
+    4:     Ici, tu peux retrouver les moussaillons 🎓
+    5:   </h3>
+    6:   <%= link_to "Enregistre-toi !", login_user_path, class: "btn btn-lg btn-primary" %>
+    7: </div>
+  
+app/views/static_page/home.html.erb:6:in `_app_views_static_page_home_html_erb__2166995679813978523_70280470133720'
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:58:46 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/reaualexis/The-Gossip-Project-Facebook-Style/app/views/layouts/application.html.erb:19: syntax error, unexpected keyword_class, expecting ')'
+...fer.append=( flash[:info] class: 'border' );@output_buffer.s...
+...                          ^~~~~):
+  
+app/views/layouts/application.html.erb:19: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 13:59:01 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 13:59:03 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"luMHqa5VLZqI+GHT6mDZSm47Oe/nSnO2DD73UZ4VBSAkKde22ui19P2/Tjd2qom623xlU0PWIcVtcXKUhUzuRA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 13:59:03 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 13:59:25 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 60.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:01:04 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:01:06 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:01:07 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WvwIKly/Bn73tqquGUZOJs05y6A+RBVe7vbJJ3aBH+E4RNRnN3iRWUrapPsQqLKG/2cpOlr+wpaUw/E5BLmQgw==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:01:07 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (2.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 54ms (Views: 47.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:03:53 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1031ms (Views: 1027.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:03:55 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 66ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:03:58 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HlMS7FOCz1K2/8QeCnY5hx+93noFWGJkgnW64e/k3ip8686hOEVYdQuTyksDmMUnLeM84GHitaz4QIL/ndxRSA==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:03:58 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 77ms (Views: 40.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:08:53 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 676ms (Views: 657.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:08:55 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:10:23 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:29 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 98ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:32 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 72ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:33 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 47ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:33 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 69ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:34 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:34 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:34 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:35 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:36 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:37 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:38 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:45 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:45 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:46 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:46 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:46 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:46 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:47 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:47 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:49 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2018-11-01 14:11:52 +0100
+Processing by UsersController#home as HTML
+  Rendering users/home.html.erb within layouts/application
+  Rendered users/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:11:53 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:12:34 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:12:36 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 78ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:13:16 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:13:29 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:13:30 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:13:31 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:13:32 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:13:33 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:13:34 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:13:34 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:13:35 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:13:45 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:13:45 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:13:49 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+4jUkIczy/ejXI1VlyNcRe055Xm9QhidmnDieTe6wuOZMAjd7PRc0B4wgwCezaDl32cH49n4z1XgRdpnRYJNgQ==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 350ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:13:50 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 142ms (Views: 54.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 14:14:59 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (1.3ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:14
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 63.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:15:03 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gossips/1" for 127.0.0.1 at 2018-11-01 14:15:05 +0100
+Processing by GossipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/gossips_controller.rb:14
+  Rendering gossips/show.html.erb within layouts/application
+  Rendered gossips/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 62ms (Views: 54.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:15:06 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 47ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:15:07 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:15:08 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:15:09 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:15:30 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:16:42 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:16:43 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 14:16:45 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:16:52 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2018-11-01 14:16:53 +0100
+Processing by UsersController#check as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"07XgxwGgNFLkAJLjvDnSs1vIBq3YcCmnzRP1cOZnHLqxDTyKamejdVlsnLa11y4TaZbkN7zK/m+3Js1ulF+T2A==", "email"=>"alexis@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 AND "users"."password" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["email", "alexis@gmail.com"], ["password", "azerty"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/gossips
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 14:16:53 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 71ms (Views: 46.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2018-11-01 14:17:05 +0100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
