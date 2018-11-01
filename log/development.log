@@ -14478,3 +14478,124 @@ Processing by StaticPageController#home as HTML
 Completed 200 OK in 50ms (Views: 44.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:59:14 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/reaualexis/.rvm/gems/ruby-2.5.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 528ms (Views: 505.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 17:59:18 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 163ms (Views: 73.0ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 17:59:19 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 118ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:59:21 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 17:59:26 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2018-11-01 17:59:34 +0100
+Processing by GossipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TMyY84el/wxb/ugVdWpzIDnL0bceT14wyEhFOZaT2tDJvKoMmkeZfjuqNdeN6qTs2l9f6GVYKZJPtXZ+8fzG4Q==", "gossip"=>{"anonymous_gossiper"=>"test", "title"=>"test", "content"=>"test"}, "commit"=>"Valider"}
+Redirected to http://localhost:3000/gossips/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 17:59:34 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 17:59:36 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 52ms (Views: 37.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 17:59:38 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 17:59:39 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (3.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 93ms (Views: 85.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:59:40 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 81ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2018-11-01 17:59:41 +0100
+Processing by GossipsController#new as HTML
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gossips" for 127.0.0.1 at 2018-11-01 17:59:42 +0100
+Processing by GossipsController#index as HTML
+  Rendering gossips/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/gossips/index.html.erb:15
+  Rendered gossips/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 61.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 17:59:45 +0100
+Processing by StaticPageController#home as HTML
+  Rendering static_page/home.html.erb within layouts/application
+  Rendered static_page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
